@@ -40,5 +40,8 @@ Eigen::Matrix3d matrix_exponential_rotational(const Eigen::Vector3d &w, double t
 bool is_average_below_eps(const std::vector<double> &values, double eps = 10e-7, uint8_t n_values = 5u);
 Eigen::VectorXd std_vector_to_eigen(const std::vector<double> &v);
 double cot(double x);
+void print_pose(const std::string &label, const Eigen::Matrix4d &tf);
+std::pair<Eigen::Vector3d, double> matrix_logarithm(const Eigen::Matrix4d &r);
+
 
 #endif //CUSTOM_MATH_H
